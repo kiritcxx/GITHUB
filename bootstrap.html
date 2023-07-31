@@ -1,0 +1,52 @@
+theia@theiadocker-kiritoexcall:/home/project$ python3 -m pip install psycopg2-binary
+Collecting psycopg2-binary
+  Downloading https://files.pythonhosted.org/packages/98/3e/05ab0922422c91ca0ecb5939a100f8dc2b5d15f5978433beadc87c5329bf/psycopg2-binary-2.9.6.tar.gz (384kB)
+    100% |████████████████████████████████| 389kB 4.0MB/s 
+Building wheels for collected packages: psycopg2-binary
+  Running setup.py bdist_wheel for psycopg2-binary ... done
+  Stored in directory: /home/theia/.cache/pip/wheels/d1/92/1a/84f5f7c421992788726addfc468304a67c5f2ffe088bdfa39a
+Successfully built psycopg2-binary
+Installing collected packages: psycopg2-binary
+Successfully installed psycopg2-binary-2.9.6
+theia@theiadocker-kiritoexcall:/home/project$ python3 -m pip install Django
+Collecting Django
+  Downloading https://files.pythonhosted.org/packages/84/eb/5329ae72bf26b91844985d0de74e4edf876e3ca409d085820f230eea2eba/Django-3.2.20-py3-none-any.whl (7.9MB)
+    100% |████████████████████████████████| 7.9MB 207kB/s 
+Collecting sqlparse>=0.2.2 (from Django)
+  Cache entry deserialization failed, entry ignored
+  Downloading https://files.pythonhosted.org/packages/98/5a/66d7c9305baa9f11857f247d4ba761402cea75db6058ff850ed7128957b7/sqlparse-0.4.4-py3-none-any.whl (41kB)
+    100% |████████████████████████████████| 51kB 12.8MB/s 
+Collecting pytz (from Django)
+  Cache entry deserialization failed, entry ignored
+  Downloading https://files.pythonhosted.org/packages/7f/99/ad6bd37e748257dd70d6f85d916cafe79c0b0f5e2e95b11f7fbc82bf3110/pytz-2023.3-py2.py3-none-any.whl (502kB)
+    100% |████████████████████████████████| 512kB 3.6MB/s 
+Collecting asgiref<4,>=3.3.2 (from Django)
+  Cache entry deserialization failed, entry ignored
+  Cache entry deserialization failed, entry ignored
+  Downloading https://files.pythonhosted.org/packages/fe/66/577f32b54c50dcd8dec38447258e82ed327ecb86820d67ae7b3dea784f13/asgiref-3.4.1-py3-none-any.whl
+Collecting typing-extensions; python_version < "3.8" (from asgiref<4,>=3.3.2->Django)
+  Cache entry deserialization failed, entry ignored
+  Downloading https://files.pythonhosted.org/packages/45/6b/44f7f8f1e110027cf88956b59f2fad776cca7e1704396d043f89effd3a0e/typing_extensions-4.1.1-py3-none-any.whl
+Installing collected packages: sqlparse, pytz, typing-extensions, asgiref, Django
+Successfully installed Django-3.2.20 asgiref-3.4.1 pytz-2023.3 sqlparse-0.4.4 typing-extensions-4.1.1
+theia@theiadocker-kiritoexcall:/home/project$ wget "https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-CD0251EN-SkillsNetwork/labs/m3_django_orm/lab1_template.zip"  
+--2023-07-31 09:25:05--  https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-CD0251EN-SkillsNetwork/labs/m3_django_orm/lab1_template.zip
+Resolving cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud (cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud)... 169.63.118.104
+Connecting to cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud (cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud)|169.63.118.104|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 2201 (2.1K) [application/zip]
+Saving to: ‘lab1_template.zip’
+
+lab1_template.zip    100%[===================>]   2.15K  --.-KB/s    in 0s      
+
+2023-07-31 09:25:05 (445 MB/s) - ‘lab1_template.zip’ saved [2201/2201]
+
+theia@theiadocker-kiritoexcall:/home/project$ unzip lab1_template.zip
+Archive:  lab1_template.zip
+   creating: lab1_template/
+  inflating: lab1_template/manage.py  
+   creating: lab1_template/orm/
+   creating: lab1_template/orm/migrations/
+  inflating: lab1_template/orm/models.py  
+  inflating: lab1_template/settings.py  
+  inflating: lab1_template/test.py   
